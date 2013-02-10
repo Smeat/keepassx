@@ -1,0 +1,11 @@
+cmake_install.cmake
+CMakeCache.txt
+Makefile
+Debug
+CMakeFiles
+moc_*
+*.qm
+.cproject
+.project
+ui_*
+qrc_resources.cxx
