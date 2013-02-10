@@ -23,11 +23,17 @@
 
 #if defined(Q_WS_X11) || defined(Q_WS_MAC)
 	#include <QFile>
+
+	//Only testes on Linux!
+	#include <sys/types.h> // for getpid()
+ 	#include <unistd.h>
 #elif defined(Q_WS_WIN)
 	#include <windows.h>
 	#include <wincrypt.h>
 	#include <QSysInfo>
 #endif
+
+
 
 #include <QCryptographicHash>
 #include <QCursor>
